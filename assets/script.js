@@ -42,7 +42,8 @@ $(function () {
       timeblock.each(function(){
         var id= $(this).attr('id');
         var storageValue = localStorage.getItem(id);
-        var newValue = $(this).children.eq(1).val(storageValue);
+        var newValue = $(this).find("textarea").val(storageValue);
+        console.log(newValue);
       });
 
 
